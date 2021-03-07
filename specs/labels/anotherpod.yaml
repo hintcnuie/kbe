@@ -4,7 +4,7 @@ metadata:
   name: labelexother
   labels:
     env: production
-    owner: michael
+    owner: charleychen
 spec:
   containers:
   - name: sise
