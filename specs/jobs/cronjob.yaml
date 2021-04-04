@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: cronjob-count
+  labels:
+    app: cronjob-demo
+spec:
+  template:
+    metadata:
+      name: cronjob-demo
+      labels:
+        app: cronjob-demo
+    spec:
+      containers:
+      - name: c
+        image: hintcnuie/cronjob-demo
+        command: ["100"]
+      restartPolicy: Never
