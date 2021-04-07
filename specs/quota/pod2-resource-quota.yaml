@@ -5,7 +5,7 @@ metadata:
   namespace: uat-env
 spec:
   containers:
-  - name: pod2-with-mem-cpu-quota-c2
+  - name: pod2-with-mem-cpu-quota-c1
     image: nginx
     resources:
       limits:
